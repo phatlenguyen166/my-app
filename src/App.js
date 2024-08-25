@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+
+import UncontrolledComponent from './form/UncontrolledComponent'
 
 function App() {
+  // const [name, setName] = useState('Casio')
+  // const [visible, setVisible] = useState(true)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      {/* <button onClick={() => setName('Apple')}>Change Name</button>
+      <button onClick={() => setVisible(false)}>Hide Clock</button>
+      {visible && <Clock name={name} />} */}
+      {/* <Layout>
+        <h1>Helasdlo</h1>
+        <BareInput
+          type='text'
+          value='hello'
+          autoFocus
+          className='input-control'
+          onChange={() => {}}
+        />
+      </Layout> */}
+      {/* <LoginControl hidden={false} isLoggedIn={true} /> */}
+      {/* <CorrectlyState /> */}
+      {/* <ProductList />
+       */}
+      {/* <Form /> */}
+      <UncontrolledComponent />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
